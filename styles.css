@@ -12,3 +12,158 @@
     --black: hsl(0, 0%, 0%);
     --darkGray: hsl(0, 0%, 48%);
 }
+
+body {
+    background-image: url('./images/image-hero-desktop.jpg');
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.menu-close {
+    display: none;
+}
+
+nav {
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    align-items: center;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+nav a {
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--moderateCyan);
+}
+
+.menu-burger {
+    display: none;
+}
+
+.menu-close {
+    display: none;
+}
+
+main {
+    width: 100%;
+    max-width: 60vw;
+    margin: 14rem auto 7rem;
+}
+
+.project-info {
+    margin-bottom: 2rem;
+    padding:3.75rem 1rem 2.5rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.35rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.0431372549)
+}
+
+.project-info h1 {
+    font-weight: 700;
+    margin: 0.5rem auto;
+}
+
+.project-info p {
+    color: var(--darkGray);
+    margin-bottom: 1rem;
+}
+
+.mastercraft-logo {
+    position: absolute;
+    top: -30px;
+}
+
+.support-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 0.5rem;
+}
+
+.support-btn button {
+    border-radius: 40px;
+    background-color: var(--moderateCyan);
+    color: #fff;
+    padding:0 2.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.0862745098);
+    border-radius: 30px;
+}
+
+.bookmark span {
+    display: block;
+    padding: 1rem 1.5rem 1.2rem 0.75rem;
+    font-weight: 700;
+    color: #7a7a7a;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('./images/image-hero-mobile.jpg');
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        max-width: 40rem;
+        border-radius: 10px;
+        top: 40px;
+        box-shadow: 20px 50px 80px gray;
+        display: none;
+    }
+
+    .nav-links a {
+        border-bottom: 1px solid gray;
+        color: #000;
+        font-weight: 700;
+    }
+}
